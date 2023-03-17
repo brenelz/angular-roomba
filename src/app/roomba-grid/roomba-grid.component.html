@@ -1,0 +1,5 @@
+<div *ngFor="let row of grid; let rowIndex = index" class="row">
+    <div *ngFor="let column of row; let columnIndex = index" class="cell">
+        <span *ngIf="coord[0] === rowIndex && coord[1] == columnIndex">{{pointer}}</span>
+    </div>
+</div>
